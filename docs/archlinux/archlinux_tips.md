@@ -33,11 +33,6 @@ sudo systemctl enable vmtoolsd.service vmware-vmblock-fuse.service
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 omf theme
 omf install eclm
-
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-fisher install jorgebucaran/nvm.fish
-nvm install 18
-nvm use 18
 ```
 
 ## Install Zsh
@@ -49,6 +44,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ## Neovim
 
 ```bash
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
+fisher install jorgebucaran/nvm.fish
+
 nvm install 18
 nvm use 18
 npm install -g tree-sitter-cli

@@ -40,8 +40,8 @@ When install Arch Linux, if you need wifi, type `iwctl`
 iwctl
 device list
 station wlan0 scan
-station device get-networks
-station device connect IAN2
+station wlan0 get-networks
+station wlan0 connect IAN2
 ```
 
 and then `ping google.com` to test
@@ -193,7 +193,7 @@ install grub:
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 ```
 
-in `/etc/default/grub`, uncomment:
+in `/etc/default/grub`, uncomment (this can be done by archlinux_install script):
 
 ```
 GRUB_DISABLE_OS_PROBER=false
@@ -258,6 +258,8 @@ shutdown now
 
 ## After Installation
 
+connect wifi with `nmtui` or `iwctl`
+
 !!! note "After Installation"
 
     config terminal fonts
@@ -308,7 +310,7 @@ shutdown now
 ## Install Yay AUR Helper
 
 ```bash
-pacman -Syy
+sudo pacman -Syy
 ```
 
 copy github ip to `/etc/hosts`:
