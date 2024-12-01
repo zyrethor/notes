@@ -1,8 +1,6 @@
 # FFT
 
-![](./img/fft01.png)
-
-## Code Explanation
+![](./img/fft/fft01.png)
 
 ## Complex Number Struct
 ```c
@@ -73,17 +71,17 @@ if 5 in 4 bits(0101), rv will be 10(1010).
 
 ### multiply
 ```c
-  int ln = 1;
-  while (ln < (sza + szb)) {
-    ln <<= 1;
-  }
+int ln = 1;
+while (ln < (sza + szb)) {
+  ln <<= 1;
+}
 
-  forn(i, ln) {
-    aa[i] = (i < sza ? a[i] : comp());
-  }
-  forn(i, ln) {
-    bb[i] = (i < szb ? b[i] : comp());
-  }
+forn(i, ln) {
+  aa[i] = (i < sza ? a[i] : comp());
+}
+forn(i, ln) {
+  bb[i] = (i < szb ? b[i] : comp());
+}
 ```
 
 if a, b polynomial is power 2 and 3<br>
@@ -95,21 +93,21 @@ ln = 8<br>
 
 then we copy a to aa, other in 0
 
-![](./img/fft01.png)
+![](./img/fft/fft01.png)
 ```c
-  fft(aa, ln, false);
-  fft(bb, ln, false);
+fft(aa, ln, false);
+fft(bb, ln, false);
 
-  forn(i, ln) {
-    cc[i] = aa[i] * bb[i];
-  }
+forn(i, ln) {
+  cc[i] = aa[i] * bb[i];
+}
 
-  fft(cc, ln, true);
+fft(cc, ln, true);
 
-  szc = ln;
-  forn(i, szc) {
-    c[i] = int(cc[i].x + 0.5);
-  }
+szc = ln;
+forn(i, szc) {
+  c[i] = int(cc[i].x + 0.5);
+}
 ```
 do fft on aa and bb<br>
 multiply aa and bb<br>
@@ -118,47 +116,78 @@ normalize cc becuase it's double, use rounding to get int
 
 ### fft
 ```c
-  int ln = __builtin_ctz(n);
-  forn(i, n) {
-    int ni = rv[i] >> (LOGN - ln);
-    if (i < ni)
-      swap(a[i], a[ni]);
-  }
+int ln = __builtin_ctz(n);
+forn(i, n) {
+  int ni = rv[i] >> (LOGN - ln);
+  if (i < ni)
+    swap(a[i], a[ni]);
+}
 ```
+
+```c
+int ni = rv[i] >> (LOGN - ln);
+```
+![](./img/fft/fft06.png)<br>
 get ln = log2(n)<br>
 get a[idx],  idx = reverse bit<br>
-
+<br>
 
 
 ```c
-  for(int st = 0; st < ln; st++) {
-    int len = 1 << st;
-    for(int k = 0; k < n; k+=(len << 1)) {
-      fore(pos, k, k+len) {
-        comp l = a[pos];
-        comp r = a[pos+len] * w[st][pos-k];
+for(int st = 0; st < ln; st++) {
+  int len = 1 << st;
+  for(int k = 0; k < n; k+=(len << 1)) {
+    fore(pos, k, k+len) {
+      comp l = a[pos];
+      comp r = a[pos+len] * w[st][pos-k];
 
-        a[pos] = l + r;
-        a[pos+len] = l - r;
-      }
+      a[pos] = l + r;
+      a[pos+len] = l - r;
     }
   }
+}
 ```
-![](./img/fft02.jpeg)<br>
-![](./img/fft03.png)<br>
-`for(int st = 0; st < ln; st++)` st = each steps, in this example = 3
-![](./img/fft04.png)<br>
-`int len = 1 << st;` len = stride = $2^{st}$, in this img, 1, 2, 4
-![](./img/fft05.png)<br>
-`for(int k = 0; k < n; k+=(len << 1))` k = how many steps in each st, in this img, 4, 2, 1
+
+![](./img/fft/fft02.jpeg)<br>
+```c
+for(int st = 0; st < ln; st++)
+```
+![](./img/fft/fft03.png)<br>
+st = each steps, in this img = 3
 
 ```c
-  if (inv) {
-    forn(i, n) {
-      a[i] = a[i] / n;
-    }
-    reverse(a+1, a+n);
+int len = 1 << st;
+```
+![](./img/fft/fft04.png)<br>
+len = stride = $2^{st}$, in this img, 1, 2, 4
+
+```c
+for(int k = 0; k < n; k+=(len << 1))
+```
+![](./img/fft/fft05.png)<br>
+k = how many steps in each st, in this img, 4, 2, 1
+
+```c
+fore(pos, k, k+len) {
+  comp l = a[pos];
+  comp r = a[pos+len] * w[st][pos-k];
+
+  a[pos] = l + r;
+  a[pos+len] = l - r;
+}
+```
+![](./img/fft/fft07.png)<br>
+calculation
+
+
+
+```c
+if (inv) {
+  forn(i, n) {
+    a[i] = a[i] / n;
   }
+  reverse(a+1, a+n);
+}
 ```
 reverse fft
 
@@ -297,6 +326,6 @@ int main() {
 }
 ```
 
-# Resources
+## Resources
 1. [The Fast Fourier Transform (FFT): Most Ingenious Algorithm Ever?](https://www.youtube.com/watch?v=h7apO7q16V0&pp=ygUDZmZ0)
-
+2. [Cooley–Tukey FFT algorithm](https://zh.wikipedia.org/zh-tw/%E5%BA%93%E5%88%A9-%E5%9B%BE%E5%9F%BA%E5%BF%AB%E9%80%9F%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E7%AE%97%E6%B3%95)
