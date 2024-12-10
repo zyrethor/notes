@@ -27,5 +27,5 @@ jobs:
             mkdocs-material-
       - name: Install mkdocs-material
         run: |
-          scripts/install-mkdocs.sh
+          pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
