@@ -1,6 +1,6 @@
 # Longest Flight Route
 
-## Dijkstra Algorithm O((V+E)logV) TLE
+## Dijkstra Algorithm $O((V+E) \log V)$ TLE
 
 ```c++
 #include <bits/stdc++.h>
@@ -73,7 +73,7 @@ int main() {
 }
 ```
 
-## Topological Sort (V + E)
+## Topological Sort $(V + E)$
 
 ```c++
 #include <bits/stdc++.h>

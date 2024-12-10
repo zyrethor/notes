@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../../Algo/mobius/">
+        <link rel="prev" href="../..">
       
       
         <link rel="next" href="../archlinux_tips/">
@@ -60,10 +60,12 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    
+    <body dir="ltr" data-md-color-scheme="cpalgo" data-md-color-primary="deep-purple" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -84,9 +86,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
@@ -116,7 +116,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="cpalgo" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -143,6 +169,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -167,6 +195,134 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  ArchLinux
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Algo/graphs/articulation%20points/" class="md-tabs__link">
+          
+  
+  Algo
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../CSES/graphs/shortest_routes_I/" class="md-tabs__link">
+          
+  
+  CSES
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Codeforces/dp/explorer_space/" class="md-tabs__link">
+          
+  
+  Codeforces
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -180,8 +336,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
@@ -200,52 +360,35 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Notes
-  </span>
-  
-
-      </a>
-    </li>
-  
-
+    
+    
     
       
       
-  
-  
-  
-  
-    
-    
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Algo
+    Home
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Algo
+            Home
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -256,32 +399,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Algo/fft/" class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    FFT
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Algo/mobius/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Mobius Function
+    Main Page
   </span>
   
 
@@ -309,29 +431,35 @@
     
     
     
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    Archlinux
+    ArchLinux
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Archlinux
+            ArchLinux
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -541,6 +669,276 @@
     
     
     
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Algo
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Algo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Graphs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Graphs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algo/graphs/articulation%20points/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Articulation points
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mathematics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mathematics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algo/Mathematics/fft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FFT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algo/Mathematics/mobius/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mobius Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algo/faq/bfs_insert_order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BFS insert order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -576,6 +974,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -588,7 +989,7 @@
             
   
   <span class="md-ellipsis">
-    Graphs
+    graphs
   </span>
   
 
@@ -598,7 +999,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
-            Graphs
+            graphs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -609,11 +1010,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CSES/graphs/When%20to%20use/" class="md-nav__link">
+      <a href="../../CSES/graphs/shortest_routes_I/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    When to use algorithms
+    Shortest Routes I
   </span>
   
 
@@ -630,74 +1031,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CSES/graphs/course_schedule/" class="md-nav__link">
+      <a href="../../CSES/graphs/shortest_routes_II/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Course Schedule
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../CSES/graphs/cycle_finding/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Cycle Finding
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../CSES/graphs/flight_discount/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Flight Discount
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../CSES/graphs/flight_routes/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Flight Routes
+    Shortest Routes II
   </span>
   
 
@@ -735,11 +1073,74 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CSES/graphs/investigation/" class="md-nav__link">
+      <a href="../../CSES/graphs/flight_discount/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Investigation
+    Flight Discount
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSES/graphs/cycle_finding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cycle Finding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSES/graphs/flight_routes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flight Routes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CSES/graphs/course_schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Schedule
   </span>
   
 
@@ -777,11 +1178,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CSES/graphs/planets_cycles/" class="md-nav__link">
+      <a href="../../CSES/graphs/investigation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Planets Cycles
+    Investigation
   </span>
   
 
@@ -840,32 +1241,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../CSES/graphs/shortest_routes_I/" class="md-nav__link">
+      <a href="../../CSES/graphs/planets_cycles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Shortest Routes I
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../CSES/graphs/shortest_routes_II/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Shortest Routes II
+    Planets Cycles
   </span>
   
 
@@ -891,6 +1271,9 @@
   
     
     
+    
+      
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -963,6 +1346,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -998,6 +1384,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1010,7 +1399,7 @@
             
   
   <span class="md-ellipsis">
-    Dp
+    DP
   </span>
   
 
@@ -1020,7 +1409,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
-            Dp
+            DP
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1062,6 +1451,9 @@
     
     
     
+      
+      
+    
     
     <li class="md-nav__item md-nav__item--nested">
       
@@ -1095,11 +1487,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Codeforces/graphs/cyclic_components/" class="md-nav__link">
+      <a href="../../Codeforces/graphs/kefa_and_park/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    E. Cyclic Components
+    C. Kefa and Park
   </span>
   
 
@@ -1137,11 +1529,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Codeforces/graphs/kefa_and_park/" class="md-nav__link">
+      <a href="../../Codeforces/graphs/minimal_height_tree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    C. Kefa and Park
+    D. Minimal Height Tree
   </span>
   
 
@@ -1158,11 +1550,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Codeforces/graphs/minimal_height_tree/" class="md-nav__link">
+      <a href="../../Codeforces/graphs/cyclic_components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    D. Minimal Height Tree
+    E. Cyclic Components
   </span>
   
 
@@ -1194,140 +1586,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#preparation-on-windows-11" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preparation on Windows 11
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-live-usb-for-arch-linux" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create Live USB for Arch Linux
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config-before-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Config Before Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#partitioning" class="md-nav__link">
-    <span class="md-ellipsis">
-      Partitioning
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mount-the-file-systems" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mount the file systems
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-time-and-locale" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Time and Locale
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-grub-boot-loader" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Grub Boot Loader
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-user" class="md-nav__link">
-    <span class="md-ellipsis">
-      Add User
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finish-arch-linux-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Finish Arch Linux Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#after-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      After Installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-yay-aur-helper" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install Yay AUR Helper
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#install-user-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install User Packages
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -1336,8 +1594,8 @@
                   
 
 
-<h1 id="arch-linux-dual-boot-with-windows-11">Arch Linux Dual Boot with Windows 11</h1>
-<h2 id="preparation-on-windows-11">Preparation on Windows 11</h2>
+<h1 id="arch-linux-dual-boot-with-windows-11">Arch Linux Dual Boot with Windows 11<a class="headerlink" href="#arch-linux-dual-boot-with-windows-11" title="Permanent link">&para;</a></h1>
+<h2 id="preparation-on-windows-11">Preparation on Windows 11<a class="headerlink" href="#preparation-on-windows-11" title="Permanent link">&para;</a></h2>
 <p>We will install Windows 11 first, then Arch Linux.</p>
 <p>We need at least 512MB EFI partition in Arch Linux, so we will create a 1GB EFI system during Windows 11 Installation.</p>
 <p><a href="https://blog.realogs.in/dual-booting-windows11-with-arch-linux/">Reference</a></p>
@@ -1355,7 +1613,7 @@
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>exit
 </span></code></pre></div>
 <p>and then keep installing Windows 11.</p>
-<h2 id="create-live-usb-for-arch-linux">Create Live USB for Arch Linux</h2>
+<h2 id="create-live-usb-for-arch-linux">Create Live USB for Arch Linux<a class="headerlink" href="#create-live-usb-for-arch-linux" title="Permanent link">&para;</a></h2>
 <p>Now for Arch Linux.</p>
 <p>First, we need to allocate some space for Arch Linux, so we go to disk management, and shrink the Windows 11 we installed, like 200GB.</p>
 <p>and then create Live USB for Arch Linux, <a href="https://www.balena.io/etcher">balenaEtcher</a></p>
@@ -1367,7 +1625,7 @@
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>station wlan0 connect IAN2
 </span></code></pre></div>
 <p>and then <code>ping google.com</code> to test</p>
-<h2 id="config-before-installation">Config Before Installation</h2>
+<h2 id="config-before-installation">Config Before Installation<a class="headerlink" href="#config-before-installation" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>make terminal font bigger</p>
@@ -1399,7 +1657,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pacman<span class="w"> </span>-Syy
 </span></code></pre></div>
 </div>
-<h2 id="partitioning">Partitioning</h2>
+<h2 id="partitioning">Partitioning<a class="headerlink" href="#partitioning" title="Permanent link">&para;</a></h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>lsblk
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>NAME<span class="w">        </span>MAJ:MIN<span class="w"> </span>RM<span class="w">   </span>SIZE<span class="w"> </span>RO<span class="w"> </span>TYPE<span class="w"> </span>MOUNTPOINTS
@@ -1415,7 +1673,7 @@
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>swapon /dev/nvme0n1p4
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>mkfs.ext4 /dev/nvme0n1p5
 </span></code></pre></div>
-<h2 id="mount-the-file-systems">Mount the file systems</h2>
+<h2 id="mount-the-file-systems">Mount the file systems<a class="headerlink" href="#mount-the-file-systems" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mount /dev/nvme0n1p5 /mnt
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>mount --mkdir /dev/nvme0n1p1 /mnt/boot
@@ -1425,7 +1683,7 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>arch-chroot /mnt
 </span></code></pre></div>
-<h2 id="set-time-and-locale">Set Time and Locale</h2>
+<h2 id="set-time-and-locale">Set Time and Locale<a class="headerlink" href="#set-time-and-locale" title="Permanent link">&para;</a></h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ln<span class="w"> </span>-sf<span class="w"> </span>/usr/share/zoneinfo/Asia/Taipei<span class="w"> </span>/etc/localtime
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>vim<span class="w"> </span>/etc/locale.gen
@@ -1447,7 +1705,7 @@
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>passwd
 </span></code></pre></div>
-<h2 id="install-grub-boot-loader">Install Grub Boot Loader</h2>
+<h2 id="install-grub-boot-loader">Install Grub Boot Loader<a class="headerlink" href="#install-grub-boot-loader" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>pacman -S grub efibootmgr os-prober networkmanager wireless_tools wpa_supplicant iwd
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>systemctl enable NetworkManager
@@ -1468,7 +1726,7 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>sudo grub-mkconfig -o /boot/grub/grub.cfg
 </span></code></pre></div>
 </div>
-<h2 id="add-user">Add User</h2>
+<h2 id="add-user">Add User<a class="headerlink" href="#add-user" title="Permanent link">&para;</a></h2>
 <p>the name is the user's name</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>pacman<span class="w"> </span>-S<span class="w"> </span>sudo
 </span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>useradd<span class="w"> </span>-m<span class="w"> </span>ian
@@ -1482,7 +1740,7 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1">## Uncomment to allow members of group wheel to execute any command</span>
 </span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>%wheel<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>ALL:ALL<span class="o">)</span><span class="w"> </span>ALL
 </span></code></pre></div>
-<h2 id="finish-arch-linux-installation">Finish Arch Linux Installation</h2>
+<h2 id="finish-arch-linux-installation">Finish Arch Linux Installation<a class="headerlink" href="#finish-arch-linux-installation" title="Permanent link">&para;</a></h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nb">exit</span>
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>umount<span class="w"> </span>/mnt
@@ -1492,7 +1750,7 @@
 </span></code></pre></div>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>shutdown<span class="w"> </span>now
 </span></code></pre></div>
-<h2 id="after-installation">After Installation</h2>
+<h2 id="after-installation">After Installation<a class="headerlink" href="#after-installation" title="Permanent link">&para;</a></h2>
 <p>connect wifi with <code>nmtui</code> or <code>iwctl</code></p>
 <div class="admonition note">
 <p class="admonition-title">After Installation</p>
@@ -1527,7 +1785,7 @@
 </span><span id="__span-40-14"><a id="__codelineno-40-14" name="__codelineno-40-14" href="#__codelineno-40-14"></a><span class="na">Include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>/etc/pacman.d/mirrorlist
 </span></code></pre></div>
 </div>
-<h2 id="install-yay-aur-helper">Install Yay AUR Helper</h2>
+<h2 id="install-yay-aur-helper">Install Yay AUR Helper<a class="headerlink" href="#install-yay-aur-helper" title="Permanent link">&para;</a></h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-Syy
 </span></code></pre></div>
 <p>copy github ip to <code>/etc/hosts</code>:</p>
@@ -1538,7 +1796,7 @@
 </span><span id="__span-43-3"><a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="nb">cd</span><span class="w"> </span>yay
 </span><span id="__span-43-4"><a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>makepkg<span class="w"> </span>-si
 </span></code></pre></div>
-<h2 id="install-user-packages">Install User Packages</h2>
+<h2 id="install-user-packages">Install User Packages<a class="headerlink" href="#install-user-packages" title="Permanent link">&para;</a></h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/zyrethor/archlinux_install
 </span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="nb">cd</span><span class="w"> </span>archlinux_install
 </span><span id="__span-44-3"><a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>./install.sh<span class="w"> </span><span class="c1">## default install packages</span>
@@ -1597,10 +1855,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.code.copy", "content.code.select", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      
+        <script src="../../javascript/config.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
